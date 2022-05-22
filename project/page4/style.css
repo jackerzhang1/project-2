@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap');
+*{
+Box-sizing: border-box;
+}
+body, html{
+	height: 100%;
+	padding: 0;
+	margin: 0;
+	font-family: 'Lato', sans-serif;
+}
+h1{
+	font-weight: normal;
+	font-size: 4em;
+	/* margin: 0 auto; */
+	/* margin-top: 30px; */
+	margin:335px auto;
+	width: 1000px;
+	color: #F90;
+	text-align: center;
+
+}
+
+#background{
+	width: 235px;
+	height: 104px;
+	margin-left: -235px;
+	position: absolute;	
+}
+
+header{
+    margin-top: 60px;
+	height: 150px;
+}
+
+#ContactUs{
+	margin-top: 300px;
+	height: 100%;	
+    background-size: 100%;
+	overflow: hidden;
+	position: relative;
+	
+}
+form{
+	margin: 0 auto;
+	width: 500px;
+	padding-top: 40px;
+	color: rgb(17, 3, 3);
+	position: relative;
+}
+label, input, textarea{
+	display: block;	
+}
+input, textarea{
+	width: 500px;	
+	border: none;
+	border-radius: 20px;
+	outline: none;
+	padding: 10px;
+	font-family: 'Lato', sans-serif;
+	font-size: 1em;
+	color: #676767;
+	transition: border 0.5s;
+	border: solid 3px #98d4f3;	
+	box-sizing:border-box;	
+}
+input:focus, textarea:focus{
+	border: solid 3px #77bde0;	
+}
+
+textarea{
+	height: 150px;	
+	resize: none; 
+	overflow: auto;
+}
+
+input[type="submit"]{
+	background-color: #e58f0e;
+	color: white;
+	height: 50px;
+	cursor: pointer;
+	margin-top: 30px;
+	font-size: 1.29em;
+}
+
+input[type="submit"]:hover{
+	background-color: #e9e50c;	
+}
+
+label{
+	font-size: 1.5em;
+	margin-top: 20px;
+	padding-left: 20px;
+}
+
+/* ---------------------- */
+
+.bg {
+    background: url('https://images.unsplash.com/photo-1647601160679-b22ac0f22d73?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwxMjB8fHxlbnwwfHx8fA%3D%3D&auto=format&fit=crop&w=500&q=60'); 
+	/* background-size: no-repeat center center/cover; */
+    position: absolute;
+    top: -30px;
+    left: -30px;
+    width: calc(100vw + 60px);
+    height: calc(100vh + 60px);
+    z-index: -1;
+    filter: blur(0px);
+  }
+  
+  .loading-text {
+    font-size: 50px;
+    color: rgb(133, 21, 21);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    overflow: hidden;
+    margin: 0;
+  } 
+  
+.counter-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    margin: 30px 50px;
+}
+.counter{
+    font-size: 60px;
+    margin-top: 10px;
+}
+@media(max-width: 580px){
+    body{
+        flex-direction: column;
+    }
+}
